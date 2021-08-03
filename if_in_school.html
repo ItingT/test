@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <title>111111</title>
+        <link rel ="stylesheet" type = "text/css" href="/static/style.css"
+        <script src="/scripts/script_inschool.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="pagetitle">
+                <h1>請問您現在是否還在就學？</h1>
+
+            </div>
+            <div id = "inschool">
+                <button onclick="inshool()" class="button" type="submit" name ="enroll">是</button>
+                <button onclick="graduate()" class="button" type="submit" name ="enroll">否</button>
+           
+
+            </div>
+        </div>
+<p id ="demo"></p>
+        <script>
+            function inshool() {
+                return window.location.assign("https://itingt.github.io/test/now_school")
+                }
+            function graduate(){
+                return window.location.assign("https://itingt.github.io/test/graduate_sc")
+
+            }
+        </script>
+            
+    </body>

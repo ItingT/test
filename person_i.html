@@ -1,0 +1,65 @@
+<!--未畢業-->
+
+<html>
+    <head>
+        <title>111111</title>
+        <linkrel ="stylesheet" type = "text/css" href=/static/style.css""
+        <script type="text/javascript" src="scripts/url.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="pagetitle">
+                <h1>請問您的性別是？</h1>
+                <div id="main">
+                    <form method="post" action="{{ url_for('end') }}">
+                      <label for="gender">性別：</label>
+                      <select name="gender" id="gender">
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                        <option value="female">不願透露</option>
+            
+                      </select>
+            
+                    </form>
+                  </div>
+                <h1>請問您是民國哪一年出生的？</h1>
+                <div id="main">
+                    <input type="text" name="age" placeholder="例：80">
+
+
+
+                    </form>
+                  </div>
+                <h1>請問您住在哪個縣市？</h1>
+                <div id="main">
+                    <input type="text" name="county" placeholder="例：臺北市">
+
+           
+                      </select>
+
+                    </form>
+                  </div>
+                </div>
+                <h1>請問您住在哪個鄉鎮／區？</h1>
+                <div id="main">
+                    <input type="text" name="Town" placeholder="例：中正區">
+
+
+                    </form>
+                  </div>
+                  <p><button onclick="url()" class="button" type="submit" name ="submit">確認</button></p>
+
+
+            </div>
+            <script>
+            function url() {
+                return window.location.assign("https://tw-uni-pub-hs-rand-dot-par2021.uk.r.appspot.com")
+                }
+
+
+
+
+            </script>
+
+        </div>
+    </body>
