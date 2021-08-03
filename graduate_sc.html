@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>111111</title>
-        <linkrel ="stylesheet" type = "text/css" href="style.css"
+        <linkrel ="stylesheet" type = "text/css" href="/static/style.css"
         <script type="text/javascript" src="script_nowstudy.js"></script>
     </head>
     <body>
@@ -14,24 +14,55 @@
           <div id="main">
 
 
-                <button onclick="N()" class="button" type="submit" name ="enroll">國小</button>   
-                <button onclick="N()" class="button" type="submit" name ="enroll">國中</button>   
-                <button onclick="N()" class="button" type="submit" name ="enroll">高中</button>   
-                <button onclick="N()" class="button" type="submit" name ="enroll">高職</button>   
-                <button onclick="N()" class="button" type="submit" name ="enroll">五專</button>   
-                <button onclick="N()" class="button" type="submit" name ="enroll">大學</button>   
-                <button onclick="MS()" class="button" type="submit" name ="enroll">研究所以上</button>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">國小</button></p>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">國中</button></p>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">高中</button></p>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">高職</button></p>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">五專</button></p>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">大學</button></p>   
+                <p><button onclick="MS()" class="button" type="submit" name ="enroll">研究所以上</button></p>   
 
           </div>
 
 
         </div>
+            <style>
+              html {
+                  background-color: #EFEEEA;
+                }
+                
+                .pagetitle {
+                    color: #007C89;
+                }
+                
+                .button {
+                  background-color: white;
+                  border: 2px solid #40383B;
+                  border-radius: 12px;
+                  color: black;
+                  padding: 16px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 24px;
+                  margin: 4px 2px;
+                  transition-duration: 0.4s;
+                  cursor: pointer;
+                }
+                
+                .button:hover {
+                  background-color: #40383B;
+                  color: #ffffff;
+                }
+                
+            
+          </style>
             <script>
             function MS(){
-                return window.location.assign("https://itingt.github.io/mobile_survey/school_info_g")
+                return window.location.assign("https://itingt.github.io/test/school_info_g")
                 }
                 function N(){
-                return window.location.assign("https://itingt.github.io/mobile_survey/end_page")
+                return window.location.assign("https://itingt.github.io/test/end_page")
                 }
                 </script>
 
