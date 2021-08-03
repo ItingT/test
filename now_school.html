@@ -14,13 +14,13 @@
           <div id="main">
 
 
-                <button onclick="N()" class="button" type="submit" name ="enroll">國小</button>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">國小</button>   
                 <button onclick="N()" class="button" type="submit" name ="enroll">國中</button>   
-                <button onclick="SH()" class="button" type="submit" name ="enroll">高中</button>   
-                <button onclick="N()" class="button" type="submit" name ="enroll">高職</button>   
+                <button onclick="SH()" class="button" type="submit" name ="enroll">高中</button></p>   
+                <p><button onclick="N()" class="button" type="submit" name ="enroll">高職</button>   
                 <button onclick="N()" class="button" type="submit" name ="enroll">五專</button>   
                 <button onclick="N()" class="button" type="submit" name ="enroll">大學</button>   
-                <button onclick="MS()" class="button" type="submit" name ="enroll">研究所以上</button>   
+                <button onclick="MS()" class="button" type="submit" name ="enroll">研究所以上</button></p>   
 
           </div>
 
@@ -54,10 +54,14 @@
                     background-color: #40383B;
                     color: #ffffff;
                   }
+                  .center{
+                    text-align: center;
+                    }
                   
               
             </style>
             <script>
+            window.history.forward(1);
             function SH() {
                 return window.location.assign("https://itingt.github.io/test/school_info_i")
                 }
