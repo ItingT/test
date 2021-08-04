@@ -8,19 +8,19 @@
     <body>
         <div id="container">
           <div class="pagetitle">
-            <h1>請問您的最高學歷是？</h1>
+            <center><h1>請問您的最高學歷是？</h1></center>
     
           </div>
           <div id="main">
 
 
-                <p><button onclick="N()" class="button" type="submit" name ="enroll">國小</button>  
+              <center><p><button onclick="N()" class="button" type="submit" name ="enroll">國小</button>  
                   <button onclick="N()" class="button" type="submit" name ="enroll">國中</button>  
-                  <button onclick="N()" class="button" type="submit" name ="enroll">高中</button></p>   
-                <p><button onclick="N()" class="button" type="submit" name ="enroll">高職</button>   
+                  <button onclick="N()" class="button" type="submit" name ="enroll">高中</button></p> </center>  
+                  <center><p><button onclick="N()" class="button" type="submit" name ="enroll">高職</button>   
                 <button onclick="N()" class="button" type="submit" name ="enroll">五專</button>   
                 <button onclick="MS()" class="button" type="submit" name ="enroll">大學</button>   
-                <button onclick="MS()" class="button" type="submit" name ="enroll">研究所以上</button></p>   
+                <button onclick="MS()" class="button" type="submit" name ="enroll">研究所以上</button></p>  </center> 
 
           </div>
 
@@ -79,6 +79,20 @@
               function N(){
                 return window.location.assign("https://itingt.github.io/test/end_page")
                 }
+                
+              document.body.onkeydown = function(e){
+                var keyCode = e.keyCode || e.which || e.charCode;
+                var ctrlKey = e.ctrlKey || e.metaKey;
+                if(ctrlKey && (keyCode == 83 || keyCode == 85 || keyCode == 73)) {
+                    e.preventDefault();
+                    return false;
+                  }else if(keyCode && keyCode == 123){
+                    return false;
+                  }
+                  }
+                  document.oncontextmenu = function (){
+                    return false;
+                    }
                 </script>
 
 
